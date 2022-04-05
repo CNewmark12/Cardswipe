@@ -4,11 +4,9 @@ from winsound import *
 from datetime import *
 import os
 
-#4/15 there is a difference between the display size and the back end size of the entries list. I remove
-#values from the entries list, but don't remove them from the display
 
 exe_path = os.getcwd()
-ico_file = 'MathCenter_tiny.ico'
+ico_file = 'MathCenter_tiny.ico' #Can be any logo you want here
 successSound = 'Success.wav'
 succSound_path = os.path.join(exe_path, successSound)
 
@@ -38,7 +36,6 @@ entries = []
 entryDict = dict()
 insertList = []
 studentNum = 1
-#docPath = "C:/Users/cnewmark.CLUNET_NT/Documents" #Let's us os.getwd to direct our save file to the folder holding this program
 docPath = os.getcwd()
 
 
@@ -174,7 +171,7 @@ def func(event):
         #Need to update this
         Confirm.bind('<Return>',lambda x: Confirm_ID(f.get(),Confirm,f,x))
 
-    if ID_Len == 7: #Most student IDs are 7 digits
+    if ID_Len == 7: #Most IDs are 7 digits
         enter_Data(IDNumber,studentNum)
 
     if ID_Len < 2:
