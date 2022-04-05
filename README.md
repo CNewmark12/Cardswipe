@@ -1,2 +1,2 @@
 # Cardswipe
-A python program for the MRS90 card swipe.
+A python program for the MSR90 card swipe.
